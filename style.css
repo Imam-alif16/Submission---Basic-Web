@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700&family=Varela&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #EEEEEE;
+    color: #272E38;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F4F8;
+    padding: 2rem 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+header .logo {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Varela', sans-serif;
+    width: 70%;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #616A7B;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+    width: 30%;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #616A7B;
+    transition: all 0.5s ease;
+}
+
+header nav ul li a:hover {
+    color: #383E47;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    color: #434C5E;
+}
+
+main .content {
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 10rem;
+    padding-right: 8rem;
+    padding-top: 7rem;
+}
+
+main .content .welcome .leftside {
+    padding-top: 15rem;
+    width: 60%;
+}
+
+main .content .welcome .leftside h1 {
+    font-size: 6.4rem;
+    font-family: 'Varela', sans-serif;
+    margin-bottom: 2.5rem;
+}
+
+main .content .welcome .leftside h2 {
+    font-size: 3.2rem;
+    font-family: 'Varela', sans-serif;
+}
+
+main .content .welcome .rightside {
+    width: 40%;
+}
+
+main .content .welcome .rightside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .content article {
+    min-height: 55rem;
+    padding: 10rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content article h2 {
+    font-size: 3.6rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    font-family: 'Varela', sans-serif;
+    color: #434C5E;
+}
+
+main .biodata h2 {
+    font-size: 3.6rem;
+    margin: 0 auto;
+    font-family: 'Varela', sans-serif;
+    color: #434C5E;
+    margin-bottom: 10rem;
+}
+
+main .content article .introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    min-height: 55rem;
+}
+
+main .content article .introduction .leftside {
+    width: 50%;
+    padding: 10rem;
+}
+
+main .content article .introduction .rightside {
+    width: 50%;
+}
+
+main .content article .introduction p {
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+}
+
+main .content article .introduction img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 1.4rem;
+}
+
+main .content .country .countryname {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+
+main .content .country h2 {
+    margin-bottom: 0;
+}
+
+main .content .country p {
+    font-size: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+main .content .country h2:nth-child(2) {
+    margin-bottom: 5rem;
+}
+
+main .content .country .countryname .leftside {
+    width: 45%;
+}
+
+main .content .country .countryname .rightside {
+    width: 65%;
+}
+
+main .content .country .countryname:nth-child(odd) .leftside {
+    width: 65%;
+}
+
+main .content .country .countryname:nth-child(odd) .rightside {
+    width: 45%;
+}
+
+main .content .country .countryname .leftside img {
+    height: 100%;
+    width: 75%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow:
+      1px 2px 2px hsl(212deg 30% 17% / 0.2),
+      2px 4px 4px hsl(212deg 30% 17% / 0.2),
+      4px 8px 8px hsl(212deg 30% 17% / 0.2),
+      8px 16px 16px hsl(212deg 30% 17% / 0.2),
+      16px 32px 32px hsl(212deg 30% 17% / 0.2);
+}
+
+main .content .country .countryname:nth-child(odd) .rightside img {
+    height: 100%;
+    width: 75%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 10rem;
+    box-shadow:
+      1px 2px 2px hsl(212deg 30% 17% / 0.2),
+      2px 4px 4px hsl(212deg 30% 17% / 0.2),
+      4px 8px 8px hsl(212deg 30% 17% / 0.2),
+      8px 16px 16px hsl(212deg 30% 17% / 0.2),
+      16px 32px 32px hsl(212deg 30% 17% / 0.2);
+}
+
+main .content .country .countryname .detail h3 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+main .content .country .countryname .detail p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+main .content .country .countryname:nth-child(odd) .detail p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+main .biodata {
+    min-height: 55rem;
+    padding: 10rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+main .biodata .introduction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 40rem;
+}
+
+main .biodata .introduction .bottom ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+main .biodata .introduction .top {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    background-color: #272E38;
+    padding: 5rem;
+}
+
+main .biodata .introduction .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .biodata .introduction .top img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #1E242B;
+    color: #EEEEEE;
+}
+
+footer .info {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .info .more {
+    width: 50ch;
+    margin-left: 2rem;
+}
+
+footer .info .more h3 {
+    font-size: 1.6rem;
+    font-family: 'Varela', sans-serif;
+    margin-bottom: 3rem;
+}
+
+footer .info .more p {
+    font-size: 1.2rem;
+}
+
+footer .info .connect {
+    margin-right: 2rem;
+}
+
+footer .info .connect h3 {
+    font-size: 1.6rem;
+    font-family: 'Varela', sans-serif;
+    margin-bottom: 3rem;
+}
+
+footer .info .connect ul li {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+footer .info .connect ul li a {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+footer .info .connect ul li a:hover {
+    color: #768BA8;
+    opacity: 0.5;
+}
+
+footer .info .connect ul li a img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .info .connect ul li a p {
+    font-size: 1.2rem;
+}
+
+footer .foot {
+    background-color: #222930;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.togglemenu {
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    justify-content: space-between;
+    position: relative;
+    display: none;
+}
+
+.togglemenu input {
+    position: absolute;
+    width: 4.4rem;
+    height: 2.8rem;
+    left: -0.8rem;
+    top: -0.3rem;
+    opacity: 0;
+}
+
+.togglemenu span {
+    display: block;
+    width: 2.8rem;
+    height: 0.3rem;
+    background-color: #616A7B;
+}
+
+/* responsive */
+
+/* tablet viewport */
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        width: 50%;
+    }
+}
+
+/* mobile viewport */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header .logo {
+        width: 50%;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: #272E38;
+        margin-right: 0;
+        margin-top: 0;
+        align-items: center;
+        justify-content: start;
+        padding: 2rem;
+        padding-top: 15rem;
+        z-index: -1000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    header nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    header nav ul li {
+        margin-bottom: 10rem;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #758094;
+        transition: all 0.5s ease;
+    }
+
+    header nav ul li a:hover {
+        color: #8996AD;
+    }
+
+    .togglemenu {
+        display: flex;
+    }
+
+    .togglemenu input {
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    main .content article {
+        min-height: 35rem;
+        padding-left: 7rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .content .hobby .introduction {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main .content article .introduction .leftside {
+        width: 100%;
+        padding: 0;
+    }
+
+    main .content article .introduction .leftside p {
+        font-size: 1.6rem;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 1rem;
+    }
+    
+    main .content article .introduction .rightside {
+        width: 100%;
+    }
+
+    main .content .hobby .introduction .rightside img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 auto;
+    }
+
+    main .content .welcome {
+        display: flex;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        padding-left: 7rem;
+    }
+
+    main .content .welcome .leftside {
+        width: 100%;
+    }
+
+    main .content .welcome .rightside {
+        width: 0%;
+    }
+
+    main .content .country p {
+        font-size: 1.6rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+
+    main .content .country .countryname {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    main .content .country .countryname:nth-child(odd) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main .content .country .countryname .leftside {
+        width: 100%;
+    }
+    
+    main .content .country .countryname .rightside {
+        width: 100%;
+    }
+    
+    main .content .country .countryname:nth-child(odd) .leftside {
+        width: 100%;
+    }
+    
+    main .content .country .countryname:nth-child(odd) .rightside {
+        width: 100%;
+    }
+
+    main .content .country .countryname .leftside img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 3rem;
+    }
+    
+    main .content .country .countryname:nth-child(odd) .rightside img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 3rem;
+        margin-left: -0rem;
+    }
+
+    main .biodata .introduction .top img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    main .biodata .introduction .top {
+        width: 100%;
+        height: 10rem;
+    }
+
+    main .biodata .introduction .bottom ul li {
+        list-style: none;
+        font-size: 1.4rem;
+        margin: 2rem 0;
+    }
+
+    footer .info {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .info .more {
+        margin-bottom: 3rem;
+    }
+
+    footer .info .connect {
+        margin-left: 2rem;
+    }
+}
